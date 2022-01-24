@@ -21,7 +21,7 @@ fit_distrib <- function(par,
                  distrib_fn, 
                  target = target, 
                  breaks = breaks, 
-                 distrib = "weibull", 
+                 distrib = distrib, 
                  output = "error",
     )
     
@@ -36,7 +36,7 @@ fit_distrib <- function(par,
   result <- distrib_fn(par_best, 
                        target = target, 
                        breaks = breaks, 
-                       distrib = "weibull", 
+                       distrib = distrib, 
                        output = "all")
   
   # output
